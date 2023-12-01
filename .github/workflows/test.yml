@@ -35,16 +35,16 @@ jobs:
             is_lts=false
           fi
 
-          echo "Version is $version, is_lts: $is_lts"
+          echo "Version is $version, is_lts: $is_lts, is_rc: $is_rc"
 
-          is-rc=false
+          is_rc=false
           if [[ ${version} == *"-SNAPSHOT" ]]; then
-            is-rc=true
+            is_rc=true
           fi
 
           echo "is-lts=${is_lts}" >> $GITHUB_OUTPUT
           echo "project-version=$version" >> $GITHUB_OUTPUT
-          echo "is-rc=${is-rc}" >> $GITHUB_OUTPUT
+          echo "is-rc=${is_rc}" >> $GITHUB_OUTPUT
   war:
     permissions:
       contents: write # to upload release asset (softprops/action-gh-release)
