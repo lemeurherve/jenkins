@@ -1,3 +1,24 @@
+<!-- ⚠️ 🆘 ‼️ READ THIS BEFORE OPENING YOUR PULL REQUEST ⚠️ 🆘 ‼️
+
+# How to sabotage yourself as a new contributor - By Mark Waite
+- Don't duplicate the bug before you try to fix it. By not duplicating the bug first, you'll frustrate the reviewers by fixing the wrong thing or changing more than is needed
+- Don't read or follow the contributing guide. By not reading the contributing guide, you'll frustrate reviewers with missing information and preventable mistakes
+- Don't test the fix interactively. By not testing the fix interactively, you'll frustrate reviewers when they test interactively and find the fix is incomplete or wrong
+- Don't test the fix in the debugger. By not testing the fix in the debugger, you'll frustrate reviewers when they detect logic errors you could have found yourself
+- Don't use the pull request template when submitting the pull request. By not using the pull request template, you'll frustrate reviewers by missing important information
+- Don't complete the pull request template. By ignoring or skipping things from the pull request template, you'll frustrate reviewers by missing important information
+- Don't run automated tests. By not running automated tests yourself, you'll frustrate reviewers by having test failures on ci.jenkins.io that you could have found and fixed yourself
+
+That list is certainly not the ultimate list, but it highlights problems seen recently with submissions from new contributors. Please:
+- Duplicate the bug before trying to fix it
+- Read and follow the contributing guide
+- Test changes interactively
+- Test changes in the debugger so that you see them execute
+- Use the pull request template and provide all the information it requests
+- Run automated tests locally before submitting a pull request
+ 
+ ⚠️ 🆘 ‼️ -->
+
 <!-- Comment:
 A great PR typically begins with the line below.
 Replace XXXXX with the numeric part of the issue ID you created in Jira.
